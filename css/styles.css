@@ -15,15 +15,16 @@ html {
      margin: 0 auto;
 }
  .picture, .resume {
-     position: fixed;
-    /*width: 960px;
-    */
-     padding: 3.125rem;
+    position: fixed;
+    width: 960px;
+    padding: 3.125rem;
 }
  .picture {
-     top: 0;
-     left: 0;
-     width: 40vw;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    display: none;
+
 }
  .intro {
      width: 75%;
@@ -63,10 +64,10 @@ html {
      font-weight: 300;
      line-height: 1.818;
      overflow-y: scroll;
-     width: 60vw;
+     width: 100vw;
 }
  .part {
-     width: 100%;
+     width: 100vw;
      margin-top: 3em;
      clear: both;
      overflow: hidden;
@@ -78,10 +79,10 @@ html {
      float: left;
 }
  .sidebar {
-     width: 15%;
+     width: 100vw;
 }
  .main {
-     width: 85%;
+     width: 100vw;
      padding-right: 25%;
 }
  .tag {
@@ -90,30 +91,32 @@ html {
      font-weight: 600;
      color: rgb(43, 93, 240);
 }
- @media screen and (min-width: 950px){
-     .add-break {
-         display: none;
+
+@media screen and (min-width: 500px) {
+    .picture {
+        width: 50vw;
+        display: block !important;
+    }
+    .resume {
+        width: 50vw;
+    }
+    .main {
+        width: 60vw;
     }
 }
- @media screen and (max-width: 949px) {
-     .resume {
-         width: 50vw;
-         box-sizing: content-box;
+@media screen and (min-width: 800px) {
+    .add-break {
+        display: none;
     }
-     .sidebar {
-         width: 100vw;
+    .resume {
+        width: 50vw;
     }
-}
- @media screen and (min-width: 300px) and (max-width: 630px) {
-     
-     .picture {
-         display: none;
+    .sidebar {
+        width: 7%;
+        margin-right: 2vw;
     }
-     .resume {
-         width: 100vw;
-         position: absolute;
-         left: 0;
-         right: 0;
+    .main {
+        width: 50vw;
+      
     }
 }
- 
