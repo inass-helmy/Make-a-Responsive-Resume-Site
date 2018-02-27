@@ -105,15 +105,15 @@ html {
     }
 }
  @media screen and (min-width: 300px) and (max-width: 630px) {
-     *, *::after, *::before {
-         box-sizing: content-box;
-    }
+     
      .picture {
          display: none;
     }
      .resume {
          width: 100vw;
-         position: relative;
+         position: absolute;
+         left: 0;
+         right: 0;
     }
 }
  
