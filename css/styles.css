@@ -95,7 +95,7 @@ html {
 @media screen and (min-width: 500px) {
     .picture {
         width: 50vw;
-        display: block !important;
+        display: block;
     }
     .resume {
         width: 50vw;
